@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script language="javascript" src="functions.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="maket">
+		<div id="header">
+			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="70px">
+						<div id="owl">
+							<img src="images/owl.png" />
+						</div>
+					</td>
+					<td width="900px">
+						<div id="topmenu">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									
+									<td id="one" width="15%">
+										<a href="#">Проекты</a>
+									</td>
+									<td id="two" width="15%">
+										<a href="#">Управление</a>
+									</td>
+									<td>
+										<span id="hello_user">Привет, <i>Миша</i>!</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td id="third">
+						<div id="help_panel">
+							<img src="images/avatar.png" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="clear"></div>
+		<div id="content">
+				
+				<div id="header_task_projects">
+					<h3>Проекты</h3>
+				</div>
+				<div class="clear"></div>
+				<div id="task_block">
+					<br />
+
+					<table cellpadding="0" cellspacing="0" >
+						<tr>
+							<td align="right">
+								<input id="add_task" type="submit" name="add_task" value="+ Добавить проект" />
+							</td>
+						</tr>
+					</table>
+					<br />
+					<table id="table_with_project" border="1" cellpadding="0" cellspacing="0" width="95%">
+						<tr id="first_tr">
+							<td>
+								<span>Название</span>
+							</td>
+							<td width="30%">
+								<span>Описание</span>
+							</td>
+							<td>
+								<span>Тимлид</span>
+							</td>
+							
+							<td>
+								<span>Заказчик</span>
+							</td>
+							<td>
+								<span>Статус</span>
+							</td>
+							<td>
+								<span>Дата создания</span>
+							</td>
+							<td>
+								<span>Дедлайн</span>
+							</td>
+							<td>
+								Релиз
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Баг-трекер</span>
+							</td>
+							<td align="center">
+								<span>Система отслеживания ошибок, которая позволяет...</span>
+							</td>
+							<td align="center">
+								Лебедев Владимир
+							</td>
+							
+							<td align="center">
+								Олег Елифантьев
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								01/11/2015
+							</td>
+							<td align="center">
+								09/01/2016
+							</td>
+							<td align="center">
+								16/01/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Баг-трекер</span>
+							</td>
+							<td align="center">
+								<span>Система отслеживания ошибок, которая позволяет...</span>
+							</td>
+							<td align="center">
+								Лебедев Владимир
+							</td>
+							
+							<td align="center">
+								Microsoft
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								07/01/2016
+							</td>
+							<td align="center">
+								25/01/2016
+							</td>
+							<td align="center">
+								01/02/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Web-справочник</span>
+							</td>
+							<td align="center">
+								<span>Справочник, который позволяет...</span>
+							</td>
+							<td align="center">
+								Фролов Даниил
+							</td>
+							
+							<td align="center">
+								ЯрГУ
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								02/02/2015
+							</td>
+							<td align="center">
+								09/02/2016
+							</td>
+							<td align="center">
+								16/02/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Скрипт поиска</span>
+							</td>
+							<td align="center">
+								<span>Скрипт поиска для сайта vkontakte.ru</span>
+							</td>
+							<td align="center">
+								Дудин Михаил
+							</td>
+							
+							<td align="center">
+								vkontakte.ru
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								11/02/2016
+							</td>
+							<td align="center">
+								14/02/2016
+							</td>
+							<td align="center">
+								21/02/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Баг-трекер</span>
+							</td>
+							<td align="center">
+								<span>Система отслеживания ошибок, которая позволяет...</span>
+							</td>
+							<td align="center">
+								Харченко Алексей
+							</td>
+							
+							<td align="center">
+								Apple Game
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								21/02/2016
+							</td>
+							<td align="center">
+								04/03/2016
+							</td>
+							<td align="center">
+								11/03/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Интернет-магазин</span>
+							</td>
+							<td align="center">
+								<span>Интернет-магазин мужской одежды...</span>
+							</td>
+							<td align="center">
+								Лебедев Владимир
+							</td>
+							
+							<td align="center">
+								Sella
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								08/03/2016
+							</td>
+							<td align="center">
+								15/03/2016
+							</td>
+							<td align="center">
+								22/03/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Система управления</span>
+							</td>
+							<td align="center">
+								<span>Система управления проектами внутри компании...</span>
+							</td>
+							<td align="center">
+								Фролов Даниил
+							</td>
+							
+							<td align="center">
+								Web-студия "Enter"
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								11/03/2016
+							</td>
+							<td align="center">
+								23/01/2016
+							</td>
+							<td align="center">
+								30/01/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Социальная сеть</span>
+							</td>
+							<td align="center">
+								<span>Социальная сеть facebook.com...</span>
+							</td>
+							<td align="center">
+								Голубцов Василий
+							</td>
+							
+							<td align="center">
+								facebook.com
+							</td>
+							<td align="center">
+								закрыт
+							</td>
+							<td align="center">
+								27/03/2016
+							</td>
+							<td align="center">
+								09/04/2016
+							</td>
+							<td align="center">
+								16/04/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Баг-трекер</span>
+							</td>
+							<td align="center">
+								<span>Система отслеживания ошибок, которая позволяет...</span>
+							</td>
+							<td align="center">
+								Лебедев Владимир
+							</td>
+							
+							<td align="center">
+								1C Game
+							</td>
+							<td align="center">
+								активен
+							</td>
+							<td align="center">
+								07/04/2016
+							</td>
+							<td align="center">
+								23/04/2016
+							</td>
+							<td align="center">
+								30/04/2016
+							</td>
+							
+						</tr>
+						<tr class="the_project_is_overdue">
+							<td align="center">
+								<span>Интернет-магазин</span>
+							</td>
+							<td align="center">
+								<span>Фирма-изготовитель спортивных товаров...</span>
+							</td>
+							<td align="center">
+								Голубцов Василий
+							</td>
+							
+							<td align="center">
+								спортмастер
+							</td>
+							<td align="center">
+								просрочен
+							</td>
+							<td align="center">
+								09/04/2016
+							</td>
+							<td align="center">
+								18/04/2016
+							</td>
+							<td align="center">
+								25/04/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Баг-трекер</span>
+							</td>
+							<td align="center">
+								<span>Система отслеживания ошибок, которая позволяет...</span>
+							</td>
+							<td align="center">
+								Лебедев Владимир
+							</td>
+							
+							<td align="center">
+								Game Store
+							</td>
+							<td align="center">
+								активен
+							</td>
+							<td align="center">
+								10/04/2016
+							</td>
+							<td align="center">
+								29/04/2016
+							</td>
+							<td align="center">
+								05/05/2016
+							</td>
+							
+						</tr>
+						<tr class="the_project_is_overdue">
+							<td align="center">
+								<span>Framework</span>
+							</td>
+							<td align="center">
+								<span>Требуется для выполнения и разработки...</span>
+							</td>
+							<td align="center">
+								Дудин Михаил
+							</td>
+							
+							<td align="center">
+								Microsoft
+							</td>
+							<td align="center">
+								просрочен
+							</td>
+							<td align="center">
+								12/04/2016
+							</td>
+							<td align="center">
+								20/04/2016
+							</td>
+							<td align="center">
+								27/04/2016
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Набор скриптов</span>
+							</td>
+							<td align="center">
+								<span>Набор скриптов для сайта...</span>
+							</td>
+							<td align="center">
+								Харченко Алексей
+							</td>
+							
+							<td align="center">
+								ООО "Газпром"
+							</td>
+							<td align="center">
+								активен
+							</td>
+							<td align="center">
+								14/04/2016
+							</td>
+							<td align="center">
+								29/04/2016
+							</td>
+							<td align="center">
+								06/05/2016
+							</td>
+							
+						</tr>
+						
+					</table>
+					<br />
+					<br />
+				</div>
+				<br />
+				<br />
+				
+			</div>
+			<div class="clear"></div>
+			<div id="foot">
+				<div>&copy; bugtrack.me 2015</div>
+			</div>
+		
+	</div>		
+</div>
+
+</body>
+</html>
+
+

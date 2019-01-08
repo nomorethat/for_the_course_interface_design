@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script language="javascript" src="functions.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="maket">
+		<div id="header">
+			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="70px">
+						<div id="owl">
+							<img src="images/owl.png" />
+						</div>
+					</td>
+					<td width="900px">
+						<div id="topmenu">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									
+									<td id="one" width="15%">
+										<a href="#">Проекты</a>
+									</td>
+									<td id="two" width="15%">
+										<a href="#">Управление</a>
+									</td>
+									<td>
+										<span id="hello_user">Привет, <i>Миша</i>!</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td id="third">
+						<div id="help_panel">
+							<img src="images/avatar.png" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		
+		<div class="clear"></div>
+		<div id="header_edit_task">
+			<h3>Редактировать задачу</h3>
+		</div>
+		<div class="clear"></div>
+		<div id="content">
+			<div id="main_block">
+				<br />
+				<br />
+				<table cellpadding="0" cellspacing="0">	
+					<tr>
+						<td>
+							<div id="name_task">
+								<input type="text" name="name_task" placeHolder="Название задачи" value="Сделать дизайн страницы с проектами" />	
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="desc_task">
+								<textarea name="description" placeHolder="Описание" >Дизайн должен включать шапку, подвал, а также все необходимые элементы управления, указанные в ТЗ.</textarea>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<table id="table_date" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							Решает: 
+							<select name="who_decides">
+								<option value="0">
+								<option value="1" selected>Дмитрий Лебедев
+							</select>
+						</td>
+						<td>
+							Дедлайн: <input type="date" name="date_create" value="2015-11-16" />
+						</td>
+						<td>
+							Статус: 
+							<select name="status">
+								<option value="0">
+								<option value="1">Открыта
+								<option value="2" selected >Решается
+								<option value="3">Решена
+								<option value="4">Не решаем
+								<option value="5">Закрыта
+							</select>
+						</td>
+						<td>
+							Приоритет: 
+							<select name="status">
+								<option value="0">
+								<option value="1" selected >Важный
+								<option value="2">Не важный
+								<option value="3">Нормальный
+							</select>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<br />
+				<table cellpadding="0" cellspacing="0" id="appl_task">
+					<tr>
+						<td>
+							Приложения:
+						</td>
+						<td>
+							<input type="button" name="select_file" value="Выбрать файлы" />
+						</td>
+						<td>
+							WinRar.rar<br>
+						</td>
+						<td>
+							<span id="btn_delete">&#215;</span>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>	
+							WinZip.zip<br />
+						</td>
+						<td>
+							<span id="btn_delete">&#215;</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>	
+							chelenger.png<br />
+						</td>
+						<td>
+							<span id="btn_delete">&#215;</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>	
+							run.exe<br />
+						</td>
+						<td>
+							<span id="btn_delete">&#215;</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>	
+							main.cpp<br />
+						</td>
+						<td>
+							<span id="btn_delete">&#215;</span>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<br />
+				<br />
+				<table cellpadding="0" cellspacing="0" id="add_or_cancel">
+					<tr>
+						<td>
+							<input type="button" name="add_button_task" value="Сохранить"/>
+						</td>
+						<td>
+							<input type="button" name="cancel_button_task" value="Отмена" />
+						</td>
+					</tr>
+				</table>
+				<br />
+				<br />
+			</div>
+			
+			<br />
+			<br />
+			<br />
+			<div class="clear"></div>
+			<div id="foot">
+				<div>&copy; bugtrack.me 2015</div>
+			</div>
+		</div>
+	</div>		
+</div>
+
+</body>
+</html>
+
+

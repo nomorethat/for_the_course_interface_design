@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script language="javascript" src="functions.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="maket">
+		<div id="header">
+			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="70px">
+						<div id="owl">
+							<img src="images/owl.png" />
+						</div>
+					</td>
+					<td width="900px">
+						<div id="topmenu">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									
+									<td id="one" width="15%">
+										<a href="#">Проекты</a>
+									</td>
+									<td id="two" width="15%">
+										<a href="#">Управление</a>
+									</td>
+									<td>
+										<span id="hello_user">Привет, <i>Миша</i>!</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td id="third">
+						<div id="help_panel">
+							<img src="images/avatar.png" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		<div class="clear"></div>
+		<div id="header_edit_task">
+			<h3>Пользователь "Лебедев Дмитрий"</h3>
+		</div>
+		<div class="clear"></div>
+		<div id="content">
+			<div id="main_block_add_new_employee">
+				<br />
+				<br />
+				<table cellpadding="0" cellspacing="0">	
+
+					<tr>
+						<td>
+							<div id="mail">
+								<input type="text" name="name_task" placeHolder="E-mail" value="smirenie@mail.ru" />	
+							</div>	
+						</td>
+					</tr>
+				</table>
+				<br />
+				<table id="table_add_people" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							Роль: 
+							<select name="who_decides">
+								<option value="0">
+								<option value="1">Администратор
+								<option value="2" selected>Сотрудник
+							</select>
+						</td>
+						<td>
+							Должность: 
+							<select name="status">
+								<option value="0">
+								<option value="1" selected>Стажёр
+								<option value="2">Младший сотрудник
+								<option value="3">Средний сотрудник
+								<option value="4">Старший сотрудник
+								<option value="5">Руководитель отделом
+								<option value="6">Босс
+							</select>
+						</td>
+						<td>
+							Специализация: 
+							<select name="status">
+								<option value="0">
+								<option value="1">Аналитик
+								<option value="2">Frontend
+								<option value="3">Backend
+								<option value="4">Тимлид
+								<option value="5" selected>Дизайнер
+								<option value="6">Тестировщик
+								<option value="7">Системный администратор
+							</select>
+						</td>
+						
+					</tr>
+				</table>
+				<br />
+				<br />
+				<table id="work_in_projects">
+					<tr>
+						<td>
+							<b>Занят в проектах</b>
+						</td>
+						<td>
+							(2):
+						</td>
+						<td>
+							Bag-tracker
+						</td>
+					</tr>
+					<tr>
+						<td>
+							
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							Web-справочник
+						</td>
+					</tr>
+				</table>
+				<br />
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+				<b id="decides_tasks">Решает задачи </b>(5):
+				<br />
+				<br />
+				<table id="work_in_task"  border="1" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							Задача
+						</td>
+						<td>
+							Проект
+						</td>
+						<td>
+							Статус
+						</td>
+						<td>
+							Дедлайн
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							Сделать дизайн
+						</td>
+						<td>
+							(Bag-tracker)
+						</td>
+						<td>
+							Решена
+						</td>
+						<td>
+							17/04/2016
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							Сверстать дизайн
+						</td>
+						<td>
+							(Bag-tracker)
+						</td>
+						<td>
+							Решена
+						</td>
+						<td>
+							18/04/2016
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							Сделать дизайн
+						</td>
+						<td>
+							(Web-справочник)
+						</td>
+						<td>
+							Ждёт
+						</td>
+						<td>
+							24/04/2016
+						</td>
+					</tr>
+					<tr id="the_task_is_overdue">
+						
+						<td>
+							Написать скрипт поиска
+						</td>
+						<td>
+							(Web-справочник)
+						</td>
+						<td>
+							Просрочена
+						</td>
+						<td>
+							20/04/2016
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							Добавить скрипты
+						</td>
+						<td>
+							(Bag-tracker)
+						</td>
+						<td>
+							Решается
+						</td>
+						<td>
+							22/04/2016
+						</td>
+					</tr>
+				</table>
+				<br />
+				<table id="date_of_login">
+					<tr>
+						<td>
+							<b>Данные для входа в систему:</b> 
+						</td>
+						<td>
+							myLogin
+						</td>
+						<td>
+							343jdfs32421
+						</td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+				<br/>
+				<br/>
+				<table cellpadding="0" cellspacing="0" id="add_or_cancel">
+					<tr>
+						<td>
+							<input type="button" name="add_button_task" value="Сохранить"/>
+						</td>
+						<td>
+							<input type="button" name="cancel_button_task" value="Удалить" />
+						</td>
+					</tr>
+				</table>
+				<br />
+				<br />
+				
+			</div>
+
+			<br />
+			<br />
+			<br />
+			<div class="clear"></div>
+			<div id="foot">
+				<div>&copy; bugtrack.me 2015</div>
+			</div>
+		</div>
+	</div>		
+</div>
+
+</body>
+</html>
+
+

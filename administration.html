@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script language="javascript" src="functions.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="maket">
+		<div id="header">
+			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="70px">
+						<div id="owl">
+							<img src="images/owl.png" />
+						</div>
+					</td>
+					<td width="900px">
+						<div id="topmenu">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									
+									<td id="one" width="15%">
+										<a href="#">Проекты</a>
+									</td>
+									<td id="two" width="15%">
+										<a href="#">Управление</a>
+									</td>
+									<td>
+										<span id="hello_user">Привет, <i>Миша</i>!</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td id="third">
+						<div id="help_panel">
+							<img src="images/avatar.png" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		<div class="clear"></div>
+		<div id="header_edit_task">
+			<h3>Добавить нового сотрудника</h3>
+		</div>
+		<div class="clear"></div>
+		<div id="content">
+			<div id="main_block_add_new_employee">
+				<br />
+				<br />
+				<table cellpadding="0" cellspacing="0">	
+					<tr>
+						<td>
+							<div id="fio">
+								<input type="text" name="name_task" placeHolder="Фамилия Имя" />	
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="mail">
+								<input type="text" name="name_task" placeHolder="E-mail" />	
+							</div>	
+						</td>
+					</tr>
+				</table>
+				<br />
+				<table id="table_add_people" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							Роль: 
+							<select name="who_decides">
+								<option value="0">
+								<option value="1">Администратор
+								<option value="2">Сотрудник
+							</select>
+						</td>
+						<td>
+							Должность: 
+							<select name="status">
+								<option value="0">
+								<option value="1">Стажёр
+								<option value="2">Младший сотрудник
+								<option value="3">Средний сотрудник
+								<option value="4">Старший сотрудник
+								<option value="5">Руководитель отделом
+								<option value="6">Босс
+							</select>
+						</td>
+						<td>
+							Специализация: 
+							<select name="status">
+								<option value="0">
+								<option value="1">Аналитик
+								<option value="2">Frontend
+								<option value="3">Backend
+								<option value="4">Тимлид
+								<option value="5">Дизайнер
+								<option value="6">Тестировщик
+								<option value="7">Системный администратор
+							</select>
+						</td>
+						
+					</tr>
+				</table>
+				<br />
+				
+				<br />
+				<table cellpadding="0" cellspacing="0" id="add_or_cancel">
+					<tr>
+						<td>
+							<input type="button" name="add_button_task" value="Добавить"/>
+						</td>
+						<td>
+							<input type="button" name="cancel_button_task" value="Отмена" />
+						</td>
+					</tr>
+				</table>
+				<br />
+				<br />
+				
+			</div>
+			<div id="header_list_of_employee">
+				<h3>Список сотрудников</h3>
+			</div>
+			<div id="main_block_with_list_employeers">
+				<br />
+				<br />
+				
+			
+				<table id="list_of_employee" border="1" cellpadding="0" cellspacing="0" width="95%">
+						<tr id="first_tr">
+							<td>
+								<span>Фамилия Имя</span>
+							</td>
+							<td>
+								<span>E-mail</span>
+							</td>
+							<td>
+								<span>Специализация</span>
+							</td>
+							<td>
+								<span>Должность</span>
+							</td>
+							<td>
+								<span>Занят в проектах</span>
+							</td>
+							<td>
+								<span>Решает задач</span>
+							</td>
+							<td>
+								login
+							</td>
+							<td>
+								Пароль
+							</td>
+							<td>
+								Роль
+							</td>
+							
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Баранов Дан</span>
+							</td>
+							<td align="center">
+								<span>bd@mail.ru</span>
+							</td>
+							<td align="center">
+								Backend
+							</td>
+							<td align="center">
+								Младший сотрудник
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								5
+							</td>
+							<td align="center">
+								bd
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Бельская Карина</span>
+							</td>
+							<td align="center">
+								<span>bk@mail.ru</span>
+							</td>
+							<td align="center">
+								Дизайнер
+							</td>
+							<td align="center">
+								Стажёр
+							</td>
+							<td align="center">
+								1
+							</td>
+							<td align="center">
+								1
+							</td>
+							<td align="center">
+								bk
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Голубцов Василий</span>
+							</td>
+							<td align="center">
+								<span>gv@mail.ru</span>
+							</td>
+							<td align="center">
+								Backend
+							</td>
+							<td align="center">
+								Старший сотрудник
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								8
+							</td>
+							<td align="center">
+								gv
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Ершов Сергей</span>
+							</td>
+							<td align="center">
+								<span>es@mail.ru</span>
+							</td>
+							<td align="center">
+								Сисадмин
+							</td>
+							<td align="center">
+								Младший сотрудник
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								es
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Климычев Михаил</span>
+							</td>
+							<td align="center">
+								<span>km@mail.ru</span>
+							</td>
+							<td align="center">
+								Frontend
+							</td>
+							<td align="center">
+								Стажёр
+							</td>
+							<td align="center">
+								1
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								km
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Крайнов Дмитрий</span>
+							</td>
+							<td align="center">
+								<span>kd@mail.ru</span>
+							</td>
+							<td align="center">
+								Тестировщик
+							</td>
+							<td align="center">
+								Средний сотрудник
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								kd
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Лебедев Дмитрий</span>
+							</td>
+							<td align="center">
+								<span>dl@mail.ru</span>
+							</td>
+							<td align="center">
+								Дизайнер
+							</td>
+							<td align="center">
+								Стажёр
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								5
+							</td>
+							<td align="center">
+								dm
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Администратор
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Лебедев Владимир</span>
+							</td>
+							<td align="center">
+								<span>lv@mail.ru</span>
+							</td>
+							<td align="center">
+								Тимлид
+							</td>
+							<td align="center">
+								Руководитель проектами
+							</td>
+							<td align="center">
+								6
+							</td>
+							<td align="center">
+								4
+							</td>
+							<td align="center">
+								lv
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Полупанов Евгений</span>
+							</td>
+							<td align="center">
+								<span>pe@mail.ru</span>
+							</td>
+							<td align="center">
+								Аналитик
+							</td>
+							<td align="center">
+								Старший Сотрудник
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								pe
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Рубацов Иван</span>
+							</td>
+							<td align="center">
+								<span>ri@mail.ru</span>
+							</td>
+							<td align="center">
+								Аналитик
+							</td>
+							<td align="center">
+								Стажёр
+							</td>
+							<td align="center">
+								1
+							</td>
+							<td align="center">
+								1
+							</td>
+							<td align="center">
+								ri
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Сергейчук Олег</span>
+							</td>
+							<td align="center">
+								<span>so@mail.ru</span>
+							</td>
+							<td align="center">
+								Тестировщик
+							</td>
+							<td align="center">
+								Стажёр
+							</td>
+							<td align="center">
+								0
+							</td>
+							<td align="center">
+								0
+							</td>
+							<td align="center">
+								so
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Фролов Даниил</span>
+							</td>
+							<td align="center">
+								<span>fd@mail.ru</span>
+							</td>
+							<td align="center">
+								Аналитик
+							</td>
+							<td align="center">
+								Старший сотрудник
+							</td>
+							<td align="center">
+								8
+							</td>
+							<td align="center">
+								9
+							</td>
+							<td align="center">
+								fd
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Фростов Егор</span>
+							</td>
+							<td align="center">
+								<span>fe@mail.ru</span>
+							</td>
+							<td align="center">
+								frontend
+							</td>
+							<td align="center">
+								Старший сотрудник
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								2
+							</td>
+							<td align="center">
+								fe
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Харченко Алексей</span>
+							</td>
+							<td align="center">
+								<span>ha@mail.ru</span>
+							</td>
+							<td align="center">
+								backend
+							</td>
+							<td align="center">
+								Старший сотрудник
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								4
+							</td>
+							<td align="center">
+								ha
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						<tr class="page_administration_employeers">
+							<td align="center">
+								<span>Шалаева Наталия</span>
+							</td>
+							<td align="center">
+								<span>sn@mail.ru</span>
+							</td>
+							<td align="center">
+								Дизайнер
+							</td>
+							<td align="center">
+								Младший сотрудник
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								3
+							</td>
+							<td align="center">
+								sn
+							</td>
+							<td>
+								343jdfs32421
+							</td>
+							<td>
+								Сотрудник
+							</td>
+						</tr>
+						
+						
+						
+					</table>
+				<br />
+				<br />
+				
+			</div>
+	
+			<br />
+			<br />
+			
+			<div class="clear"></div>
+			<div id="foot">
+				<div>&copy; bugtrack.me 2015</div>
+			</div>
+		</div>
+		
+		
+	</div>		
+</div>
+
+</body>
+</html>
+
+

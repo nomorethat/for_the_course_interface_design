@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+	<script language="javascript" src="functions.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="maket">
+		<div id="header">
+			<table width="100%" height="100%" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="70px">
+						<div id="owl">
+							<img src="images/owl.png" />
+						</div>
+					</td>
+					<td width="900px">
+						<div id="topmenu">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									
+									<td id="one" width="15%">
+										<a href="#">Проекты</a>
+									</td>
+									<td id="two" width="15%">
+										<a href="#">Управление</a>
+									</td>
+									<td>
+										<span id="hello_user">Привет, <i>Миша</i>!</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td id="third">
+						<div id="help_panel">
+							<img src="images/avatar.png" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="header_project">
+			<h3>Проект</h3>
+		</div>
+		<div class="clear"></div>
+		<div id="content">
+			<div id="main_block">
+				<br />
+				<br />
+				<table cellpadding="0" cellspacing="0">	
+					<tr>
+						<td>
+							<div id="name_task">
+								Баг-трекер	
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<br />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div id="desc_task_project">
+								Система отслеживания ошибок (англ. bug tracking system) — прикладная программа, разработанная с целью помочь разработчикам программного обеспечения (программистам, тестировщикам и др.) учитывать и контролировать ошибки и неполадки, найденные в программах, пожелания пользователей, а также следить за процессом устранения этих ошибок и выполнения или невыполнения пожеланий.	
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div id="header_task">
+					<h3>Задачи</h3>
+				</div>
+				<div class="clear"></div>
+				<div id="task_block">
+					<br />
+					<table id="filters" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="text_for_filter">
+								
+							</td>
+							<td>
+							
+							</td>
+							<td>
+								Дата создания
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								Последнее изменение
+							</td>
+							<td>
+								
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span id="span_search">Отфильтровать по:</span>
+							</td>
+							<td>
+								<select class="choise" name="choise_executer">
+									<option value="0">Исполнитель
+								</select>
+							</td>
+							<td>
+								<input class="date" type="date" name="date_create" />
+							</td>
+							<td>
+								<select class="choise" name="choise_status">
+									<option value="0">Статус
+									<option value="1">Требует решения
+									<option value="2">Решается
+									<option value="3">Решена
+									<option value="4">Не решаем
+									<option value="4">Закрыта
+								</select>
+							</td>
+							<td>
+								<input class="date" type="date" name="date_last_edit" />
+							</td>
+							<td>
+								<select class="choise" name="choise_deadline">
+									<option value="0">Просроченные
+								</select>
+							</td>
+							<td>
+								<input id="filter" type="submit" name="submit" value="" />
+								
+							</td>
+						</tr>
+					</table>
+					<br />
+					<table cellpadding="0" cellspacing="0" >
+						<tr>
+							<td align="right">
+								<input id="add_task" type="submit" name="add_task" value="+ Добавить задачу" />
+							</td>
+						</tr>
+					</table>
+					<br />
+					<table border="1" cellpadding="0" cellspacing="0" width="95%">
+						<tr id="first_tr">
+							<td>
+								<span>Название</span>
+							</td>
+							<td width="30%">
+								<span>Описание</span>
+							</td>
+							<td>
+								<span>Исполнитель</span>
+							</td>
+							<td>
+								<span>Дата создания</span>
+							</td>
+							<td>
+								<span>Дедлайн</span>
+							</td>
+							<td>
+								<span>Статус</span>
+							</td>
+							<td>
+								<span>Приоритет</span>
+							</td>
+							
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Составить ТЗ</span>
+							</td>
+							<td align="center">
+								<span>Поговорить с заказчиком и составить ТЗ</span>
+							</td>
+							<td align="center">
+								Фролов Даниил
+							</td>
+							<td align="center">
+								<span>11/04/2016</span>
+							</td>
+							<td align="center">
+								<span>12/04/2016</span>
+							</td>
+							<td align="center">
+								Решена
+							</td>
+							<td align="center">
+								1
+							</td>	
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Сделать дизайн</span>
+							</td>
+							<td align="center">
+								<span>Сделать макеты дизайна по ТЗ</span>
+							</td>
+							<td align="center">
+								Лебедев Дмитрий
+							</td>
+							<td align="center">
+								<span>12/04/2016</span>
+							</td>
+							<td align="center">
+								<span>14/04/2016</span>
+							</td>
+							<td align="center">
+								Решена
+							</td>
+							<td align="center">
+								2
+							</td>	
+						</tr>
+						<tr id="project_problems">
+							<td align="center">
+								<span>Frontend</span>
+							</td>
+							<td align="center">
+								<span>Сверстать макеты</span>
+							</td>
+							<td align="center">
+								Фростов Егор
+							</td>
+							<td align="center">
+								<span>15/04/2016</span>
+							</td>
+							<td align="center">
+								<span>19/04/2016</span>
+							</td>
+							<td align="center">
+								Просрочена
+							</td>
+							<td align="center">
+								3
+							</td>	
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Backend</span>
+							</td>
+							<td align="center">
+								<span>Написать серверную часть</span>
+							</td>
+							<td align="center">
+								Дудин Михаил
+							</td>
+							<td align="center">
+								<span>17/04/2016</span>
+							</td>
+							<td align="center">
+								<span>23/04/2016</span>
+							</td>
+							<td align="center">
+								Решается
+							</td>
+							<td align="center">
+								4
+							</td>	
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Тестировать</span>
+							</td>
+							<td align="center">
+								<span>Придумать набор тестов и применить</span>
+							</td>
+							<td align="center">
+								Сергейчук Олег
+							</td>
+							<td align="center">
+								<span>24/04/2016</span>
+							</td>
+							<td align="center">
+								<span>25/04/2016</span>
+							</td>
+							<td align="center">
+								Ждёт
+							</td>
+							<td align="center">
+								5
+							</td>	
+						</tr>
+						<tr>
+							<td align="center">
+								<span>Внедрить</span>
+							</td>
+							<td align="center">
+								<span>Внедрить систему в использование</span>
+							</td>
+							<td align="center">
+								Лебедев Владимир
+							</td>
+							<td align="center">
+								<span>01/05/2016</span>
+							</td>
+							<td align="center">
+								<span>02/05/2016</span>
+							</td>
+							<td align="center">
+								Ждёт
+							</td>
+							<td align="center">
+								6
+							</td>	
+						</tr>
+
+					</table>
+					<br />
+					<br />
+					<br />
+				</div>
+				<br />
+				<br />
+				
+			</div>
+			<br />
+			<br />
+			<div class="clear"></div>
+			<div id="foot">
+				<div>&copy; bugtrack.me 2015</div>
+			</div>
+		</div>
+	</div>		
+</div>
+
+</body>
+</html>
+
+
